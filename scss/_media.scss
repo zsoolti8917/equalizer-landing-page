@@ -1,18 +1,166 @@
+@include media-md {
 
-@mixin media-md{
-    @media screen and (min-width: 768px){
-        @content;
-    }
-}
+     .container{
+ 
+        background-image: url('/starter-code/assets/bg-main-tablet.png');
+        background-position: -200px -250px;
 
-@mixin media-lg{
-    @media screen and (min-width: 1024px){
-        @content;
-    }
-}
+     &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 30%;
+         height: 30%;
+         background-image: url('/starter-code/assets/bg-pattern-1.svg');
+         background-repeat: no-repeat;
+         background-position: right top;
+         background-size: contain; 
+ 
+     }
+ 
+     }
+     .main {
 
-@mixin media-xl{
-    @media screen and (min-width: 1600px){
-        @content;
-    }
-}
+ 
+         &__header {
+             text-align: left;
+             max-width: 36rem;
+             margin: 0;
+ 
+             h2 {
+                 font-size: 4rem;
+                 margin-bottom: 2rem;
+             }
+ 
+             p {
+                 font-size: $text-size-medium;
+                 margin-bottom: 13rem;
+             }
+         }
+ 
+         &__content {
+             background-color: initial;
+             max-width: 1200px;
+             width: 100%;
+             margin: 0 auto;
+             position: relative;
+ 
+             &-left {
+                 background-color: black;
+                 margin: 0 2rem ;
+                 border-radius: 1rem;
+                 
+ 
+                 img {
+                     margin: 0;
+                     transform: translate(20%, -20%);
+                 }
+             }
+ 
+             &-right--wrapper{
+                 max-width: 25rem;
+                 position: absolute;
+                 bottom: 0;
+                 right: 0;
+                 transform: translate(-20%, 20%);
+             }
+         }
+     }
+ 
+     footer{
+         margin-top: 13rem;
+     }
+ 
+     .footer__container{
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         gap: 0;
+ 
+         &-logo{
+             align-self: center;
+         }
+         &-copyrights{
+             grid-column: 1/3;
+             grid-row: 2/3;
+             max-width: 22rem;
+         }
+ 
+         &-socials{
+             grid-column: 2/3;
+             grid-row: 2/3;
+             justify-self: flex-end;
+             align-self: center;
+         }
+     }
+ 
+ }
+ 
+ @include media-lg {
+    .container{
+ 
+        background-image: url('/starter-code/assets/bg-main-desktop.png');
+        background-position: -300px -300px;
+        background-size: 135%;
+    }    
+    .main{
+
+         &__header{
+             max-width: 1200px;
+             margin: 0 auto;
+ 
+             h2 {
+                 font-size: $text-size-xlarge;
+                 max-width: 60rem;
+             }
+ 
+             p{
+                 max-width: 60rem;
+             }
+ 
+             
+ 
+             
+         }
+ 
+         &__content{
+             
+             &-left{
+                 max-width: 1200px;
+                 width: 100%;
+                 margin: 0  auto;
+             }
+ 
+             &-right--wrapper{
+                 transform: translate(-35%,15%);
+             }
+         }
+     }
+ 
+     .footer__container{
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+ 
+         &-logo{
+             grid-column: 1/2;
+             grid-row: 1/2;
+             align-self: flex-start;
+         }
+ 
+         &-socials{
+             grid-column: 3/4;
+             grid-row: 1/2;
+             justify-self: flex-end;
+             align-self: center;
+         }
+ 
+         &-copyrights{
+             grid-column: 2/3;
+             grid-row: 1/2;
+             justify-self: center;
+             align-self: center;
+         }
+     }
+ }
+ 
+ @include media-xl {}
