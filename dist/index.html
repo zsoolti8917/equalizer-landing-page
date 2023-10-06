@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-  <section class="header__container">
+  <section class="header__container wrapper">
     <div class="header__logo">
       <img src="../starter-code/assets/logo.svg" alt="Equalizer logo">
     </div>
@@ -19,9 +19,8 @@
   <div class="header__bg-image"></div>
 </header>
 
-<main>
-  <section class="main__container">
-    <header class="main__container__header">
+<main class="main">
+    <header class="main__header wrapper">
       <h1 class="visually-hidden">Equalizer</h1>
       <h2>We make your music sound extraordinary.</h2>
       <p> 
@@ -31,47 +30,51 @@
       </p>
     </header>
 
-    <section class="main__container__content">
-      <div class="main__container__content-left">
+    <section class="main__content">
+      <div class="main__content-left">
         <img src="../starter-code/assets/illustration-app.png" alt="Phone illustration">
       </div>
-      <div class="main__container__content-right">
-        <div class="main__container__content-right__premium">
-          <h3>Premium EQ</h3>
-          <p>
-            Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-            your listening experience to a whole new level and access all our incredible features!
-          </p>
-          <div class="main__container__content-right__premium-price">
-            <span>$4 / month</span>
-            <button>Start free trial</button>
+      <div class="main__content-right--wrapper">
+        <div class="main__content-right--wrapper__container">
+          <div class="main__content-right--wrapper__container__premium">
+            <h3>Premium EQ</h3>
+            <p>
+              Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+              your listening experience to a whole new level and access all our incredible features!
+            </p>
+            <div class="main__content-right--wrapper__container__premium--price">
+              
+                <span>$4</span>
+                <p>/ month</p>
+             
+            </div>
+          </div>
+          <div class="main__content-right--wrapper__container__download">
+            <div class="main__content-right--wrapper__container__download--btns">
+              <button class="main__content-right--wrapper__container__download--btns-ios btn">
+                <img src="../starter-code/assets/icon-apple.svg" alt="Apple logo">
+                <span>iOS Download</span>
+              </button>
+              <button class="main__content-right--wrapper__container__download--btns-android btn">
+                <img src="../starter-code/assets/icon-android.svg" alt="Google logo">
+                <span>Android Download</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="main__container__content-right__download">
-          <div class="main__container__content-right__download-btns">
-            <button class="main__container__content-right__download-btns-ios">
-              <img src="../starter-code/assets/icon-apple.svg" alt="Apple logo">
-              <span>iOS Download</span>
-            </button>
-            <button class="main__container__content-right__download-btns-android">
-              <img src="../starter-code/assets/icon-google.svg" alt="Google logo">
-              <span>Android Download</span>
-            </button>
-          </div>
-        </div>
+
       </div>
     </section>
-  </section>
 
   <footer>
-    <section class="footer__container">
+    <section class="footer__container wrapper">
       <div class="footer__container-logo">
         <img src="../starter-code/assets/logo.svg" alt="Equalizer logo">
       </div>
 
       <div class="footer__container-copyrights">
         <p>All rights reserved © Equalizer 2021
-          Have any problems? Contact us via social media or email us at equalizer@example.com</p>
+          Have any problems? Contact us via social media or email us at <a href="mailto:">equalizer@example.com</a> </p>
       </div>
 
       <div class="footer__container-socials">
