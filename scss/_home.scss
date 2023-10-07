@@ -1,7 +1,7 @@
 
 .container{
     max-width: 1920px;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     position: relative;
     background-image: url('/starter-code/assets/bg-main-mobile.png');
@@ -58,7 +58,7 @@
             margin-bottom: -6rem;
             background-image: url('/starter-code/assets/bg-pattern-2.svg');
             background-position-x: center;
-            background-color: black;
+            background-color: $primary-color-800;
             background-repeat: no-repeat;
 
             img {
@@ -129,16 +129,11 @@
                         &-ios {
                             background-color: $primary-color-800;
                             color: $primary-color-100;
-                            border-radius: 1rem;
-                            padding: 1rem 2rem;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
                             gap: 1rem;
-                            transition: all 0.3s ease-in-out;
+                            @include transition-ease;
 
                             &:hover {
-                                background-color: $secondary-color-600;
+                                background-color: $secondary-color-200;
                             }
 
                         }
@@ -146,16 +141,12 @@
                         &-android {
                             background-color: $primary-color-100;
                             color: $primary-color-800;
-                            border-radius: 1rem;
-                            padding: 1rem 2rem;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
                             gap: 1rem;
-                            transition: all 0.3s ease-in-out;
+                            @include transition-ease;
 
                             &:hover {
-                                background-color: $primary-color-800;
+                                background-color: $secondary-color-600;
+
                             }
                         }
                     }
@@ -176,21 +167,25 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-
-    &-copyrights {
-        line-height: 1.625rem;
-    }
-
     a {
         color: $secondary-color-400;
         font-weight: 700;
         text-decoration: none;
-        transition: all 0.3s ease-in-out;
+        @include transition-ease;
 
-        &:hover {
-            color: $secondary-color-600;
+       
+    }
+    &-copyrights {
+        line-height: 1.625rem;
+
+        a{
+            &:hover {
+                color: $secondary-color-600;
+            }
         }
     }
+
+    
 
     &-socials {
         display: flex;
@@ -199,6 +194,12 @@ footer {
         justify-content: flex-start;
         align-items: center;
         margin-top: 1rem;
+
+        a{
+            &:hover {
+                filter: $svg-filter;
+            }
+        }
     }
 }
 

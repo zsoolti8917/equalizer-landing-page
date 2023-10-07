@@ -71,7 +71,7 @@ h6 {
 
 .container {
   max-width: 1920px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   position: relative;
   background-image: url("/starter-code/assets/bg-main-mobile.png");
@@ -124,7 +124,7 @@ h6 {
   margin-bottom: -6rem;
   background-image: url("/starter-code/assets/bg-pattern-2.svg");
   background-position-x: center;
-  background-color: black;
+  background-color: #191826;
   background-repeat: no-repeat;
 }
 .main__content-left img {
@@ -178,30 +178,20 @@ h6 {
 .main__content-right--wrapper__container__download--btns-ios {
   background-color: #191826;
   color: #FCFAF9;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .main__content-right--wrapper__container__download--btns-ios:hover {
-  background-color: #FFB964;
+  background-color: #66E2DC;
 }
 .main__content-right--wrapper__container__download--btns-android {
   background-color: #FCFAF9;
   color: #191826;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .main__content-right--wrapper__container__download--btns-android:hover {
-  background-color: #191826;
+  background-color: #FFB964;
 }
 
 footer {
@@ -214,16 +204,16 @@ footer {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-.footer__container-copyrights {
-  line-height: 1.625rem;
-}
 .footer__container a {
   color: #FA7453;
   font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.footer__container a:hover {
+.footer__container-copyrights {
+  line-height: 1.625rem;
+}
+.footer__container-copyrights a:hover {
   color: #FFB964;
 }
 .footer__container-socials {
@@ -233,6 +223,9 @@ footer {
   justify-content: flex-start;
   align-items: center;
   margin-top: 1rem;
+}
+.footer__container-socials a:hover {
+  filter: invert(66%) sepia(69%) saturate(3016%) hue-rotate(324deg) brightness(98%) contrast(100%);
 }
 
 .btn {
@@ -371,6 +364,10 @@ footer {
     grid-row: 1/2;
     justify-self: flex-end;
     align-self: center;
+  }
+  .footer__container-socials a:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
   }
   .footer__container-copyrights {
     grid-column: 2/3;

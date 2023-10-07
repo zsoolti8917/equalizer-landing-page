@@ -152,6 +152,14 @@
              grid-row: 1/2;
              justify-self: flex-end;
              align-self: center;
+
+             a{
+
+                    &:hover{
+                        transform: scale(1.2);
+                        @include transition-ease;
+                    }
+             }
          }
  
          &-copyrights{
@@ -163,4 +171,3 @@
      }
  }
  
- @include media-xl {}
