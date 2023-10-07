@@ -30,16 +30,16 @@ Users should be able to:
 ### Screenshot
 
 Finished project on a 1440px screen
-![Finished project on 1440px](/solution/PC.png)
+![Finished project on 1440px](/solution/EqualizerPC.png)
 
 Finished project on a 375px screen
 <br />
-![Finished project on 375px](/solution/Phone.png)
+![Finished project on 375px](/solution/EqualizerPhone.png)
 
 ### Links
 
 - Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/-mobile-first-skilled-landing-page-iTOr1lhmJk)
-- Live Site URL: [live site URL here](https://jovial-starship-27a6a5.netlify.app/)
+- Live Site URL: [live site URL here](https://phenomenal-valkyrie-eca101.netlify.app/)
 
 ## My process
 
