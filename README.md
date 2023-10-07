@@ -38,7 +38,7 @@ Finished project on a 375px screen
 
 ### Links
 
-- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/-mobile-first-skilled-landing-page-iTOr1lhmJk)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/-mobilefirst-equalizer-landing-page-UNUTUwu7qg)
 - Live Site URL: [live site URL here](https://phenomenal-valkyrie-eca101.netlify.app/)
 
 ## My process
